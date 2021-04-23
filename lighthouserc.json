@@ -1,0 +1,32 @@
+{
+	"ci": {
+		"assert": {
+			"preset": "lighthouse:no-pwa",
+			"assertions": {
+				"categories:performance": ["warn", {
+					"aggregationMethod": "optimistic",
+					"minScore": 0.80
+				}],
+				"categories:accessibility": ["warn", {
+					"aggregationMethod": "optimistic",
+					"minScore": 0.90
+				}],
+				"categories:best-practices": ["warn", {
+					"minScore": 0.7
+				}],
+				"categories:seo": ["warn", {
+					"minScore": 0.9
+				}]
+			}
+		},
+		"collect": {
+			"method": "node",
+			"additive": false,
+			"headful": false,
+			"settings": {
+				"chromeFlags": "--no-sandbox",
+				"config-path": "./lighthouse.config.js"
+			}
+		}
+	}
+}
