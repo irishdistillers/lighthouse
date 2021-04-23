@@ -1,0 +1,23 @@
+{
+  "name": "irishdistillers/lighthouse",
+  "description": "Lighthouse ppowa in your project",
+  "type": "library",
+  "repositories": [{
+    "type": "composer",
+    "url": "https://wpackagist.org"
+  }],
+  "autoload" : {
+    "psr-4": {
+      "lighthouse\\": "./"
+    }
+  },
+  "config": {
+    "sort-packages": true,
+    "platform": {
+      "php": "7.3"
+    }
+  },
+  "license": "proprietary",
+  "scripts": {
+  }
+}
